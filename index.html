@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.min.css" />
+    <title>Todo app</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="todo">
+        <header class="header">
+          <h1 class="title">Todo</h1>
+          <button class="switch-theme-btn" id="theme-btn">
+            <!-- <img
+              id="theme-icon"
+              src="./assets/icons/icon-sun.svg"
+              alt="to light"
+            /> -->
+          </button>
+        </header>
+        <form class="form">
+          <span class="circle"></span>
+          <input
+            id="form_input"
+            type="text"
+            placeholder="Create a new todo..."
+          />
+          <button id="form_button" class="plus-btn">+</button>
+        </form>
+        <div class="empty-container">You don`t have todos</div>
+        <div class="list-container hidden">
+          <ul class="list" id="list">
+            <!-- <div class="list-item">
+              <label class="list-item-label">
+                <input type="checkbox" id="checkbox" />
+                <span class="check-circle"></span>
+              </label>
+              <li class="list-item-text"></li>
+              <button class="list-item-btn">
+                <img src="./assets/icons/icon-cross.svg" alt="delete" />
+              </button>
+            </div> -->
+          </ul>
+        </div>
+        <div class="actions">
+          <p class="todo-items" id="count-of-items">0 items left</p>
+          <div class="filters">
+            <button id="select_all">All</button>
+            <button id="select_active">Active</button>
+            <button id="select_completed">Completed</button>
+          </div>
+          <button class="clear-btn" id="clear_btn">Clear Completed</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="./scripts/themeSwitcher.js"></script>
+    <script src="./scripts/listUpdater.js"></script>
+    <script src="./scripts/filters.js"></script>
+    <script src="./scripts/filtersMovement.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+@mixin flex($dir, $justify, $align) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin bg-pos($bg-pos) {
+  background-repeat: no-repeat;
+  background-position: $bg-pos;
+  background-size: contain;
+}
+
+// Media queries
+
+@mixin _1170 {
+  @media (max-width: 1170px) {
+    @content;
+  }
+}
+@mixin _979 {
+  @media (max-width: 979px) {
+    @content;
+  }
+}
+@mixin _768 {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin _600 {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+@mixin _480 {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+@mixin _350 {
+  @media (max-width: 350px) {
+    @content;
+  }
+}
